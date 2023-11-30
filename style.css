@@ -171,6 +171,9 @@ html:focus-within {
 
 /* Mobile */
 @media screen and (max-width: 640px) {
+  #socials-container{
+    display: none;
+  }
 }
 
 /* Tablet */
@@ -294,6 +297,22 @@ header {
 }
 
 /* Reuben */
+.fa-square-facebook:hover {
+  color: #1877F2 !important;
+  transition: 0.3s ease-in-out;
+}
+
+.fa-x-twitter:hover {
+  color: #585858 !important;
+  transition: 0.3s ease-in-out;
+}
+
+.fa-google-plus-g:hover {
+  color: #FBBC05 !important;
+  transition: 0.3s ease-in-out;
+}
+
+
 
 
 
