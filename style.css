@@ -1,0 +1,274 @@
+/* === CSS Reset === */
+
+/* Remove border and padding */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Remove default list bullet/number from list elements*/
+ul,
+ol,
+dl,
+li {
+  list-style: none;
+}
+
+/* Remove underline and outline from link elements */
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+/* Make images easier to work with */
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Hiding scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hiding scrollbar for IE, Edge and Firefox */
+body {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+
+
+
+
+/* === Accessibility === */
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+
+
+
+
+/* === General === */
+
+/* Set variables for colours and default font*/
+:root {
+  --primary: #000000;
+  --secondary: #202020;
+  --highlight: #FFFFFF;
+
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Set background properties */
+html {
+  background-color: var(--primary);
+  background-image: none;
+  border: none;
+  border-radius: 0;
+
+  /* REMOVE */
+  padding-bottom: 1000px;
+}
+
+/* Adds smooth scrolling to any links to other parts of the same page */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+
+
+
+
+/* === Text === */
+
+/* Set default styles for all title elements */
+.title-text {
+  font-family: inherit;
+  font-size: clamp(2.25rem, 6vw, 4.5rem);
+  font-size: clamp(3rem, 8vw, 6rem);
+  font-weight: normal;
+  color: var(--tertiary);
+  text-align: left;
+  line-height: normal;
+}
+
+/* Set default styles for all heading elements */
+.heading-text {
+  font-family: inherit;
+  font-size: clamp(2rem, 4.5vw, 2.5rem);
+  font-weight: 100;
+  color: var(--highlight);
+  text-align: left;
+  line-height: normal;
+}
+
+/* Set default styles for all subheading elements */
+.subheading-text {
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: normal;
+  color: var(--highlight);
+  text-align: left;
+  line-height: normal;
+}
+
+/* Set default styles for all paragraph elements */
+.paragraph-text {
+  font-family: inherit;
+  font-size: clamp(1rem, 3vw, 1.25rem);
+  font-weight: 200;
+  color: var(--highlight);
+  text-align: left;
+  line-height: normal;
+}
+
+/* Set default styles for all navigation elements */
+.navigation-text {
+  font-family: inherit;
+  font-size: clamp(1rem, 1.75vw, 2rem);
+  font-weight: normal;
+  color: var(--highlight);
+  text-align: left;
+  line-height: clamp(1.1rem, 1.8vw, 2.2rem);
+}
+
+/* Set default styles for all call to action elements */
+.call-to-action-text {
+  font-family: "Archivo", sans-serif;
+  font-size: clamp(2rem, 4.5vw, 3.375rem);
+  font-weight: 900;
+  color: var(--tertiary);
+  text-align: left;
+  line-height: normal;
+  cursor: pointer;
+}
+
+
+
+
+
+/* === Header === */
+
+/* Set out layout for the header */
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px 0;
+    align-items: center;
+    background-color: var(--primary);
+    position: relative;
+    z-index: 10;
+}
+
+/* Sets width and alignment of logo */
+#logo {
+    width: clamp(200px, 50%, 500px);
+    grid-column: 2;
+    align-items: center;
+    min-width: 200px;
+}
+
+/* Vertically and horizontally aligns all items in a div */
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* Sets the gap between social media icons */
+#socials-container {
+    padding: 0 30%;
+}
+
+
+
+
+
+/* === Info Section === */
+#information {
+    padding: 0 150px
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+/*  */
+#section-title {
+    width: 100%;
+    padding: 7px 0;
+    background-color: var(--secondary);
+    border-top: 1px solid var(--highlight);
+    position: relative;
+    z-index: 10;
+}
+
+.decorative-shape {
+    border-radius: 0 0 140px 140px;
+    width: 400px;
+    height: 530px;
+    border-left: 0.1px solid var(--highlight);
+    border-right: 0.1px solid var(--highlight);
+    border-bottom: 0.1px solid var(--highlight);    
+    z-index: 0;
+}
+
+#decorative-shape-1 {
+    padding: 0 50px 100px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 20px;
+}
+
+#decorative-shape-2 {
+    transform: rotate(90deg);
+}
+
+.decorative-image {
+    width: 250px;
+    height: 250px;
+    aspect-ratio: 1 / 1;
+}
+
+#images {
+    display: grid;
+    grid-template-columns: repeat(4, [image] 132.5px);
+    grid-template-rows: [row] auto [row];
+}
+
+#decorative-image-1 {
+    grid-column: image / span 2;
+    grid-row: row;
+}
+
+#decorative-image-2 {
+    grid-column: image 3 / span 2;
+    grid-row: row;
+}
+
+#decorative-image-3 {
+    grid-column: image 2 / span 2;
+    grid-row: row 2;
+}
