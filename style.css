@@ -312,12 +312,73 @@ header {
   transition: 0.3s ease-in-out;
 }
 
+.form-title{
+  display: flex;
+width: 1160.8px;
+height: 55.2px;
+flex-direction: column;
+justify-content: center;
+flex-shrink: 0;
 
+color: #FFF;
+font-family: Roboto;
+font-size: 40px;
+font-style: normal;
+font-weight: 700;
+line-height: 52px; /* 81.25% */
+padding-left: 8vw;
+}
 
+.input-text {
+  font-family: inherit;
+  font-size: clamp(1rem, 3vw, 1.25rem);
+  font-weight: 200;
+  color: var(--highlight);
+  text-align: left;
+  line-height: normal;
+  padding-left: 8vw;
+}
 
+.section-title{
+  display: flex;
+width: 1422.4px;
+height: 23.2px;
+flex-direction: column;
+justify-content: center;
+flex-shrink: 0;
+color: #FFF;
+font-family: Roboto;
+font-size: 23px;
+font-style: normal;
+font-weight: 500;
+line-height: 52px;
+padding-left: 8vw;
+padding-bottom: 1vh;
+}
 
+#name-input{
+  width: 120px;
+height: 15.2px;
+flex-shrink: 0;
+border: 1px solid #FFF;
+background-color: black;
+opacity: 1;
+}
 
+::placeholder {
+  color: rgb(255, 255, 255);
+  opacity: 1; /* Firefox */
+}
 
+::-ms-input-placeholder { /* Edge 12 -18 */
+  color: rgb(255, 255, 255);
+}
+
+input {
+  background-color: black;
+  color: white;
+  padding-top: 5px;
+  }
 
 /* Callum */
 #form {
