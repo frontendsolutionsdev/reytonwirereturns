@@ -75,48 +75,56 @@
       </section>
       <section id="form">
         <div id="form-container">
-          <div class="row">
-            <img src="Photos/Logo.png" alt="" />
-            <div id="contact-info">
-              <p class="paragraph-text">Unit 2 Miners Road Industrial Estate</p>
-              <p class="paragraph-text">Llay</p>
-              <div id="line-3">
-                <p class="paragraph-text">Wrexham</p>
-                <p class="paragraph-text">Tel: 01978 855668</p>
-              </div>
-              <div id="line-4">
-                <p class="paragraph-text">LL12 0PJ</p>
-                <p class="paragraph-text">Fax: 01978 854943</p>
+          <div id="section-1">
+            <div class="row">
+              <img src="Photos/Logo.png" alt="" />
+              <div id="contact-info">
+                <p class="paragraph-text">Unit 2 Miners Road Industrial Estate</p>
+                <p class="paragraph-text">Llay</p>
+                <div id="line-3">
+                  <p class="paragraph-text">Wrexham</p>
+                  <p class="paragraph-text">Tel: 01978 855668</p>
+                </div>
+                <div id="line-4">
+                  <p class="paragraph-text">LL12 0PJ</p>
+                  <p class="paragraph-text">Fax: 01978 854943</p>
+                </div>
               </div>
             </div>
-          </div>
-          <form
-          action="https://formsubmit.co/329d583e9823b90d0cc0c5d6f82471f8"
-          method="POST"
-        ><div>
-          <p class="form-title">R&P Return Declaration/ Collection Note</p>
-          <br>
-          <p class="section-title">Section 1 - Customer information</p>
-          <br>
-        </div>
-          <label for="name-input"class="input-text">Customer name................................................................................................................................................</label>
-          
-          <input
-            class="body-text"
-            type="text"
+            <form action="https://formsubmit.co/329d583e9823b90d0cc0c5d6f82471f8" method="POST">
+            </form>
+            <div>
+              <p class="form-title">R&P Return Declaration/ Collection Note</p>
+              <p class="section-title">Section 1 - Customer information</p>
+            </div>
+            <label for="name-input"class="input-text">Customer name................................................................................................................................................</label>
+            <input
+              class="body-text"
+              type="text"
+              name="name"
+              placeholder=""
+              id="name-input"
+              required
+            />
+            <label for="name-input"class="input-text">Full Customer address....................................................................................................................................</label>
+            <input class="body-text" type="text"
             name="name"
             placeholder=""
             id="name-input"
             required
-          />
-          <input type="submit" />
-          <input
-            type="hidden"
-            name="_next"
-            value="https://reytonwirereturns.com"
-          />
+            />
+          </div>
+          <p class="section-title">Section 2 - Consignment details</p>
           <br>
-          <label for="name-input"class="input-text">Full Customer address....................................................................................................................................</label>
+          <p class="section-title">Measurements(cm)</p>
+          <label for="name-input"class="input-text">Pallet 1.........................................................................................................</label>
+          <input
+          class="body-text"
+          type="text"
+          name="name"
+          placeholder=""
+          id="name-input"
+          />
           <input
           class="body-text"
           type="text"
@@ -124,56 +132,28 @@
           placeholder=""
           id="name-input"
           required
-        />
-        <input type="submit"/>
-        <input
-          type="hidden"
-          name="_next"
-          value="https://reytonwirereturns.com"
-        />
-        <br>
-        <br>
-        <p class="section-title">Section 2 - Consignment details</p>
-        <br>
-        <p class="section-title">Measurements(cm)</p>
-        <label for="name-input"class="input-text">Pallet 1.........................................................................................................</label>
-        <input
-        class="body-text"
-        type="text"
-        name="name"
-        placeholder=""
-        id="name-input"
-      />
-      <input
-      class="body-text"
-      type="text"
-      name="name"
-      placeholder=""
-      id="name-input"
-      required
-        />
-        <input
-        class="body-text"
-        type="text"
-        name="name"
-        placeholder=""
-        id="name-input"
-        required
-      />
-      <input type="submit"/>
-      <input
-        type="hidden"
-        name="_next"
-        value="https://reytonwirereturns.com"
-      />
-      <br>
-      <label for="name-input"class="input-text">Pallet 2.........................................................................................................</label>
-      <input
-      class="body-text"
-      type="text"
-      name="name"
-      placeholder=""
-      id="name-input"
+            />
+            <input
+            class="body-text"
+            type="text"
+            name="name"
+            placeholder=""
+            id="name-input"
+            required
+          />
+          <input
+            type="hidden"
+            name="_next"
+            value="https://reytonwirereturns.com"
+          />
+          <br>
+          <label for="name-input"class="input-text">Pallet 2.........................................................................................................</label>
+          <input
+          class="body-text"
+          type="text"
+          name="name"
+          placeholder=""
+          id="name-input"
     />
     <input
     class="body-text"
@@ -191,7 +171,6 @@
       id="name-input"
       required
     />
-    <input type="submit" value="Send" />
     <input
       type="hidden"
       name="_next"
@@ -222,7 +201,6 @@
     id="name-input"
     required
   />
-  <input type="submit" value="Send" />
   <input
     type="hidden"
     name="_next"
@@ -230,262 +208,249 @@
   />
   <br>
   <br>
-  <p class="section-title">Section 3 - Consignment contents</p>
-  <br>
-  <p class="section-title">Reels size</p>
-  <label for="name-input"class="input-text">D160..........................................................................................................................................</label>
-  <input
-  class="body-text"
-  type="text"
-  name="name"
-  placeholder=""
-  id="name-input"
-/>
-<input
-class="body-text"
-type="text"
-name="name"
-placeholder=""
-id="name-input"
-required
-  />
-  <br>
-  <label for="name-input"class="input-text">D250..........................................................................................................................................</label>
-  <input
-  class="body-text"
-  type="text"
-  name="name"
-  placeholder=""
-  id="name-input"
-/>
-<input
-class="body-text"
-type="text"
-name="name"
-placeholder=""
-id="name-input"
-required
-  />
-  <br>
-  <label for="name-input"class="input-text">D355..........................................................................................................................................</label>
-  <input
-  class="body-text"
-  type="text"
-  name="name"
-  placeholder=""
-  id="name-input"
-/>
-<input
-class="body-text"
-type="text"
-name="name"
-placeholder=""
-id="name-input"
-required
-  />
-  <br>
-  <label for="name-input"class="input-text">D500..........................................................................................................................................</label>
-  <input
-  class="body-text"
-  type="text"
-  name="name"
-  placeholder=""
-  id="name-input"
-/>
-<input
-class="body-text"
-type="text"
-name="name"
-placeholder=""
-id="name-input"
-required
-  />
-  <br>
-  <label for="name-input"class="input-text">D630..........................................................................................................................................</label>
-  <input
-  class="body-text"
-  type="text"
-  name="name"
-  placeholder=""
-  id="name-input"
-/>
-<input
-class="body-text"
-type="text"
-name="name"
-placeholder=""
-id="name-input"
-required
-  />
-  <br>
-  <label for="name-input"class="input-text">C250..........................................................................................................................................</label>
-  <input
-  class="body-text"
-  type="text"
-  name="name"
-  placeholder=""
-  id="name-input"
-/>
-<input
-class="body-text"
-type="text"
-name="name"
-placeholder=""
-id="name-input"
-required
-  />
-  <br>
-  <label for="name-input"class="input-text">C315..........................................................................................................................................</label>
-  <input
-  class="body-text"
-  type="text"
-  name="name"
-  placeholder=""
-  id="name-input"
-/>
-<input
-class="body-text"
-type="text"
-name="name"
-placeholder=""
-id="name-input"
-required
-  />
-  <br>
-  <label for="name-input"class="input-text">C400..........................................................................................................................................</label>
-  <input
-  class="body-text"
-  type="text"
-  name="name"
-  placeholder=""
-  id="name-input"
-/>
-<input
-class="body-text"
-type="text"
-name="name"
-placeholder=""
-id="name-input"
-required
-  />
-  <br>
-  <label for="name-input"class="input-text">Pallets........................................................................................................................................</label>
-  <input
-  class="body-text"
-  type="text"
-  name="name"
-  placeholder=""
-  id="name-input"
-/>
-<input
-class="body-text"
-type="text"
-name="name"
-placeholder=""
-id="name-input"
-required
-  />
-  <br>
-  <label for="name-input"class="input-text">Frames......................................................................................................................................</label>
-  <input
-  class="body-text"
-  type="text"
-  name="name"
-  placeholder=""
-  id="name-input"
-/>
-<input
-class="body-text"
-type="text"
-name="name"
-placeholder=""
-id="name-input"
-required
-  />
-  <br>
-  <label for="name-input"class="input-text">Boards.......................................................................................................................................</label>
-  <input
-  class="input"
-  type="text"
-  name="name"
-  placeholder=""
-  id="name-input"
-/>
-<input
-class="body-text"
-type="text"
-name="name"
-placeholder=""
-id="name-input"
-required
-  />
-  <br>
-  <br>
-  <label for="name-input"class="input-text"><b>Total credit value</b>..............................................................................................................................................</label>
-  <input
-  class="input"
-  type="text"
-  name="name"
-  placeholder=""
-  id="name-input"
-/>
-<br>
-<label for="name-input"class="input-text"><b>Total value of credit to the nearest pound</b>............................................................................................</label>
-<input
-class="input"
-type="text"
-name="name"
-placeholder=""
-id="name-input"
-/>
-<br>
-<br>
-<label for="name-input"class="input-text">Today's Date.........................................................................................................................................................</label>
-<input
-class="input"
-type="text"
-name="name"
-placeholder=""
-id="name-input"
-/>
-<br>
-<label for="name-input"class="input-text">Recieved (Drivers Signature)...........................................................................................................................</label>
-<input
-class="input"
-type="text"
-name="name"
-placeholder=""
-id="name-input"
-/>
-<br>
-<br>
-<br>
-<br>
-
-<div>
-  <a class="submit">Sumbit Form</a>
-</div>
-<div id="reytonwire-bottom" >
-  <img src="Photos/Logo.png" alt="Logo" class="logo" id="bottom-logo" />
-  <br>
-  <p id="bottom-text" class="paragraph-text">The Most Reliable UK Link To High-Quality 
-    Electrical <br>Winding Products Supply Chains</p>
-
-      </div>
-      <p id="line-spacer"></p>
-      </div>
-      <div class="certificates">
-  <p id="bottom-title"class="form-title">Certificates</p>
-  
-<br>
-  <p id="bottom-text" class="paragraph-text">Dahrentrad-AB-ISO9001-2021 | Eilor AS9100D |
-Eilor ISO9001</p>
-<br>
-<p class="paragraph-text" id="bottom-text">© 2023 Reytonwire | Frontend Solutions | All Rights Reserved</p>
-</div>
-
-        </form>
-
+         <p class="section-title">Section 3 - Consignment contents</p>
+         <br>
+         <p class="section-title">Reels size</p>
+         <label for="name-input"class="input-text">D160..........................................................................................................................................</label>
+         <input
+           class="body-text"
+           type="text"
+           name="name"
+           placeholder=""
+           id="name-input"
+         />
+         <input
+         class="body-text"
+         type="text"
+         name="name"
+         placeholder=""
+         id="name-input"
+         required
+           />
+           <br>
+           <label for="name-input"class="input-text">D250..........................................................................................................................................</label>
+           <input
+           class="body-text"
+           type="text"
+           name="name"
+           placeholder=""
+           id="name-input"
+         />
+         <input
+         class="body-text"
+         type="text"
+         name="name"
+         placeholder=""
+         id="name-input"
+         required
+           />
+           <br>
+           <label for="name-input"class="input-text">D355..........................................................................................................................................</label>
+           <input
+           class="body-text"
+           type="text"
+           name="name"
+           placeholder=""
+           id="name-input"
+         />
+         <input
+         class="body-text"
+         type="text"
+         name="name"
+         placeholder=""
+         id="name-input"
+         required
+           />
+           <br>
+           <label for="name-input"class="input-text">D500..........................................................................................................................................</label>
+           <input
+           class="body-text"
+           type="text"
+           name="name"
+           placeholder=""
+           id="name-input"
+         />
+         <input
+         class="body-text"
+         type="text"
+         name="name"
+         placeholder=""
+         id="name-input"
+         required
+           />
+           <br>
+           <label for="name-input"class="input-text">D630..........................................................................................................................................</label>
+           <input
+           class="body-text"
+           type="text"
+           name="name"
+           placeholder=""
+           id="name-input"
+         />
+         <input
+         class="body-text"
+         type="text"
+         name="name"
+         placeholder=""
+         id="name-input"
+         required
+           />
+           <br>
+           <label for="name-input"class="input-text">C250..........................................................................................................................................</label>
+           <input
+           class="body-text"
+           type="text"
+           name="name"
+           placeholder=""
+           id="name-input"
+         />
+         <input
+         class="body-text"
+         type="text"
+         name="name"
+         placeholder=""
+         id="name-input"
+         required
+           />
+           <br>
+           <label for="name-input"class="input-text">C315..........................................................................................................................................</label>
+           <input
+           class="body-text"
+           type="text"
+           name="name"
+           placeholder=""
+           id="name-input"
+         />
+         <input
+         class="body-text"
+         type="text"
+         name="name"
+         placeholder=""
+         id="name-input"
+         required
+           />
+           <br>
+           <label for="name-input"class="input-text">C400..........................................................................................................................................</label>
+           <input
+           class="body-text"
+           type="text"
+           name="name"
+           placeholder=""
+           id="name-input"
+         />
+         <input
+         class="body-text"
+         type="text"
+         name="name"
+         placeholder=""
+         id="name-input"
+         required
+           />
+           <br>
+           <label for="name-input"class="input-text">Pallets........................................................................................................................................</label>
+           <input
+           class="body-text"
+           type="text"
+           name="name"
+           placeholder=""
+           id="name-input"
+         />
+         <input
+         class="body-text"
+         type="text"
+         name="name"
+         placeholder=""
+         id="name-input"
+         required
+           />
+           <br>
+           <label for="name-input"class="input-text">Frames......................................................................................................................................</label>
+           <input
+           class="body-text"
+           type="text"
+           name="name"
+           placeholder=""
+           id="name-input"
+         />
+         <input
+         class="body-text"
+         type="text"
+         name="name"
+         placeholder=""
+         id="name-input"
+         required
+           />
+           <br>
+           <label for="name-input"class="input-text">Boards.......................................................................................................................................</label>
+           <input
+           class="input"
+           type="text"
+           name="name"
+           placeholder=""
+           id="name-input"
+         />
+         <input
+         class="body-text"
+         type="text"
+         name="name"
+         placeholder=""
+         id="name-input"
+         required
+           />
+           <br>
+           <br>
+           <label for="name-input"class="input-text"><b>Total credit value</b>..............................................................................................................................................</label>
+           <input
+           class="input"
+           type="text"
+           name="name"
+           placeholder=""
+           id="name-input"
+         />
+         <br>
+         <label for="name-input"class="input-text"><b>Total value of credit to the nearest pound</b>............................................................................................</label>
+         <input
+         class="input"
+         type="text"
+         name="name"
+         placeholder=""
+         id="name-input"
+         />
+         <br>
+         <br>
+         <label for="name-input"class="input-text">Today's Date.........................................................................................................................................................</label>
+         <input
+         class="input"
+         type="text"
+         name="name"
+         placeholder=""
+         id="name-input"
+         />
+         <br>
+         <label for="name-input"class="input-text">Recieved (Drivers Signature)...........................................................................................................................</label>
+         <input
+         class="input"
+         type="text"
+         name="name"
+         placeholder=""
+         id="name-input"
+         />
+         <br>
+         <br>
+         <br>
+         <br>
+         
+         <div>
+           <a class="submit">Sumbit Form</a>
+         </div>
+         <div id="reytonwire-bottom" >
+           <img src="Photos/Logo.png" alt="Logo" class="logo" id="bottom-logo" />
+           <br>
+           <p id="bottom-text" class="paragraph-text">The Most Reliable UK Link To High-Quality 
+             Electrical <br>Winding Products Supply Chains</p>
+         
+               </div>
+               <p id="line-spacer"></p>
         </div>
       </section>
     </main>
