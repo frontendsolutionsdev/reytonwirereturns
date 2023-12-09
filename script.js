@@ -1,15 +1,22 @@
-window.addEventListener('resize', updateDots);
-
 function updateDots() {
-  const containerWidth = document.querySelector('.row').offsetWidth;
-  const pWidth = document.querySelector('#form-item').offsetWidth;
+  const inputRows = document.querySelectorAll(".input-row");
 
-  const dots = document.querySelector('.dots');
-  const availableSpace = containerWidth - pWidth;
-  const dotsCount = Math.max(0, Math.floor(availableSpace / 4)); // Adjust the number for spacing
+  inputRows.forEach((row) => {
+    const containerWidth = row.offsetWidth;
+    const pWidth = row.querySelector(".form-item").offsetWidth;
+    const iWidth = row.querySelector("input").offsetWidth;
 
-  dots.textContent = '.'.repeat(dotsCount);
+    const dots = row.querySelector(".dots");
+    const availableSpace = containerWidth - pWidth - iWidth - 10; // Adjusted value for more space
+
+    const dotsCount = Math.max(0, Math.floor(availableSpace / 4)); // Adjust the value for desired space
+
+    dots.textContent = ".".repeat(dotsCount);
+  });
 }
 
-// Call initially and on window resize
-updateDots();
+document.addEventListener("DOMContentLoaded", function () {
+  updateDots(); // Call the function once the DOM is fully loaded
+});
+
+window.addEventListener("resize", updateDots);
