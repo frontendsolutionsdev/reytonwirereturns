@@ -353,6 +353,28 @@ form {
 }
 
 #section-1,
-#section-2 {
+#section-2,
+#section-3 {
   padding: 0 0 50px 0;
 }
+
+input[type = number],
+input[type = text]{
+  margin-left: 5px;
+  width: 130px;
+  border: 1px solid #FFF;
+  background: none;
+  color: #ffffff;
+}
+
+
+.sum-box{
+  width: 160px;
+  height: 18px;
+  flex-shrink: 0;
+  border: 3px solid #FFF;
+  margin-left: 5px;
+  color: #ffffff;
+}
+
+
