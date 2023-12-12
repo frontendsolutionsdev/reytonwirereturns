@@ -22,6 +22,47 @@ document.addEventListener("DOMContentLoaded", function () {
 
 window.addEventListener("resize", updateDots);
 
+// const canvas = document.getElementById('drawingCanvas');
+// const ctx = canvas.getContext('2d');
+// let isDrawing = false;
+
+// // Set up event listeners
+// canvas.addEventListener('mousedown', startDrawing);
+// canvas.addEventListener('mousemove', draw);
+// canvas.addEventListener('mouseup', endDrawing);
+// canvas.addEventListener('mouseleave', endDrawing);
+
+// function startDrawing(e) {
+//   isDrawing = true;
+//   draw(e); // To start drawing immediately at the mouse position
+// }
+
+// function draw(e) {
+//   if (!isDrawing) return;
+
+//   ctx.lineWidth = 2;
+//   ctx.lineCap = 'round';
+//   ctx.strokeStyle = '#fff';
+
+//   ctx.lineTo(e.clientX - canvas.getBoundingClientRect().left, e.clientY - canvas.getBoundingClientRect().top);
+//   ctx.stroke();
+//   ctx.beginPath();
+//   ctx.moveTo(e.clientX - canvas.getBoundingClientRect().left, e.clientY - canvas.getBoundingClientRect().top);
+// }
+
+// function endDrawing() {
+//   isDrawing = false;
+//   ctx.beginPath();
+// }
+
+// // Capture drawing data and attach it to the form before submission
+// document.getElementById('myForm').addEventListener('submit', function(e) {
+//   const drawingImage = canvas.toDataURL('image/png');
+//   document.getElementById('drawingImage').value = drawingImage;
+// });
+
+
+
 
 
 
@@ -31,11 +72,11 @@ const section3 = document.getElementById('section-3');
 
 // Initialize prices for each reel size
 const reelSizes = ['D160', 'D200', 'D250', 'D355', 'D500', 'D630', "C250", "C315", "C400"];
-const reelPrices = [25, 30, 35, 40, 45, 50, 60, 80, 100];
+const reelPrices = [1.34, 1.50, 2.12, 4.94, 12.99, 18.16, 4.66, 9.22, 15.96];
 
-const boardsPrice = 20;
-const palletPrice = 50;
-const framePrice = 10;
+const palletPrice = 6.30;
+const framePrice = 4.38;
+const boardsPrice = 7.08;
 
 // Function to calculate credit due
 function calculateCreditDue() {
@@ -56,9 +97,6 @@ function calculateCreditDue() {
   const frameQty = parseInt(section3.querySelector('#frames').value);
   const boardQty = parseInt(section3.querySelector('#boards').value);
 
-  // Calculate total reel size quantities
-  const totalReelSizeQty = d160Qty + d200Qty + d250Qty + d355Qty + d500Qty + d630Qty + c250Qty + c315Qty + c400Qty  ;
-
   // Calculate credit due for each reel size
   let totalReelSizeCreditDue = 0;
   for (const reelSize of reelSizes) {
@@ -78,25 +116,20 @@ function calculateCreditDue() {
   // Total credit due
   const totalCreditDue = totalReelSizeCreditDue + totalBoardsCreditDue + totalPalletCreditDue + totalFrameCreditDue;
 
-
-
-
-
-  
   // Set credit due values in input fields
-  section3.querySelector('#price_d160').value = d160Qty * reelPrices[0];
-  section3.querySelector('#price_d200').value = d200Qty * reelPrices[1];
-  section3.querySelector('#price_d250').value = d250Qty * reelPrices[2];
-  section3.querySelector('#price_d355').value = d355Qty * reelPrices[3];
-  section3.querySelector('#price_d500').value = d500Qty * reelPrices[4];
-  section3.querySelector('#price_d630').value = d630Qty * reelPrices[5];
-  section3.querySelector('#price_c250').value = c250Qty * reelPrices[6];
-  section3.querySelector('#price_c315').value = c315Qty * reelPrices[7];
-  section3.querySelector('#price_c400').value = c400Qty * reelPrices[8];
-  section3.querySelector('#price_pallet').value = palletPrice * palletQty;
-  section3.querySelector('#price_frames').value = framePrice * frameQty;
-  section3.querySelector('#price_boards').value = boardsPrice * boardQty;
-  section3.querySelector('#total-credit-due').value = totalCreditDue;
+  section3.querySelector('#price_d160').value = (d160Qty * reelPrices[0]).toFixed(2);
+  section3.querySelector('#price_d200').value = (d200Qty * reelPrices[1]).toFixed(2);
+  section3.querySelector('#price_d250').value = (d250Qty * reelPrices[2]).toFixed(2);
+  section3.querySelector('#price_d355').value = (d355Qty * reelPrices[3]).toFixed(2);
+  section3.querySelector('#price_d500').value = (d500Qty * reelPrices[4]).toFixed(2);
+  section3.querySelector('#price_d630').value = (d630Qty * reelPrices[5]).toFixed(2);
+  section3.querySelector('#price_c250').value = (c250Qty * reelPrices[6]).toFixed(2);
+  section3.querySelector('#price_c315').value = (c315Qty * reelPrices[7]).toFixed(2);
+  section3.querySelector('#price_c400').value = (c400Qty * reelPrices[8]).toFixed(2);
+  section3.querySelector('#price_pallet').value = (palletPrice * palletQty).toFixed(2);
+  section3.querySelector('#price_frames').value = (framePrice * frameQty).toFixed(2);
+  section3.querySelector('#price_boards').value = (boardsPrice * boardQty).toFixed(2);
+  section3.querySelector('#total-credit-due').value = (totalCreditDue).toFixed(2);
 }
 
 // Function to get reel size quantity
