@@ -1,3 +1,4 @@
+// Callum
 function updateDots() {
   const inputRows = document.querySelectorAll(".input-row");
 
@@ -25,7 +26,7 @@ window.addEventListener("resize", updateDots);
 
 
 
-
+// Reuben
 const section3 = document.getElementById('section-3');
 
 // Initialize prices for each reel size

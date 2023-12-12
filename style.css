@@ -173,6 +173,15 @@ html:focus-within {
   .form-title {
     font-size: 5px;
   }
+  .info-row {
+    flex-direction: column;
+    align-items: start !important;
+  }
+  .info-row img {
+    width: 100% !important;
+    height: auto !important;
+    aspect-ratio: auto;
+  }
 }
 
 /* Tablet */
@@ -319,12 +328,12 @@ form {
 }
 
 .input-row {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    overflow: hidden;
-    padding: 5px 0;
-  }
+  display: flex;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+  padding: 5px 0;
+}
 
 #form-item {
   margin: 0;
@@ -357,6 +366,8 @@ form {
 #section-3 {
   padding: 0 0 50px 0;
 }
+/* Reuben */
+
 
 input[type = readonly]{
   border: 4px solid white;
@@ -365,8 +376,8 @@ input[type = readonly]{
 
 input[type = number],
 input[type = text]{
-  margin-left: 5px !important;
-  width: 130px;
+  margin: 0 3px;
+  width: clamp(50px, 10vw, 150px);
   border: 1px solid #FFF;
   background: none;
   color: #ffffff;
