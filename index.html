@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Return Declaration Form</title>
     <link rel="stylesheet" href="style.css" />
     <script
       src="https://kit.fontawesome.com/f4843e8ec5.js"
@@ -36,6 +36,16 @@
               crates, pallets or boards will also be provided.
             </p>
           </div>
+          <div id="mobile-info">
+            <h2 class="subheading-text">SUBMIT A COLLECTION NOTE</h2>
+            <h1 class="heading-text">Reels And Packaging</h1>
+            <p class="paragraph-text">
+              Submitting a return declaration has never been easier, simply fill
+              out the form below and we will be in contact to ensure a smooth
+              and swift transaction. Guidance on how to package used reels,
+              crates, pallets or boards will also be provided.
+            </p>
+          </div>
           <div class="stock-images" id="images">
             <img
               src="Photos/Sample picture 1.png"
@@ -59,11 +69,11 @@
         </div>
       </section>
       <section id="form">
-        <div id="form-container">
-          <form
-            action="https://formsubmit.co/329d583e9823b90d0cc0c5d6f82471f8"
-            method="POST"
-          >
+        <form
+          action="https://formsubmit.co/329d583e9823b90d0cc0c5d6f82471f8"
+          method="POST"
+        >
+          <div id="form-container">
             <input type="hidden" name="_template" value="table" />
             <div id="section-1">
               <div class="info-row row">
@@ -209,8 +219,8 @@
               <div class="title-row row">
                 <p class="section-title-text">Reels Size</p>
                 <div class="dimensions">
-                  <p class="section-title-text">Quantity</p>
-                  <p class="section-title-text">Credit Due</p>
+                  <p class="section-title-text">Num of Units</p>
+                  <p class="section-title-text">Credit Due (GBP)</p>
                 </div>
               </div>
               <div class="input-row">
@@ -224,6 +234,7 @@
                   name="D160 Quantity"
                   value="0"
                   id="qty_d160"
+                  min="0"
                   required
                 />
                 <input type="number" readonly id="price_d160" value="0" />
@@ -239,6 +250,7 @@
                   name="D200 Quantity"
                   value="0"
                   id="qty_d200"
+                  min="0"
                   required
                 />
                 <input type="number" readonly id="price_d200" value="0" />
@@ -254,6 +266,7 @@
                   name="D250 Quantity"
                   value="0"
                   id="qty_d250"
+                  min="0"
                   required
                 />
                 <input type="number" readonly id="price_d250" value="0" />
@@ -269,6 +282,7 @@
                   name="D355 Quantity"
                   value="0"
                   id="qty_d355"
+                  min="0"
                   required
                 />
                 <input type="number" readonly id="price_d355" value="0" />
@@ -284,6 +298,7 @@
                   name="D500 Quantity"
                   value="0"
                   id="qty_d500"
+                  min="0"
                   required
                 />
                 <input type="number" readonly id="price_d500" value="0" />
@@ -299,6 +314,7 @@
                   name="D630 Quantity"
                   value="0"
                   id="qty_d630"
+                  min="0"
                   required
                 />
                 <input type="number" readonly id="price_d630" value="0" />
@@ -314,6 +330,7 @@
                   name="C250 Quantity"
                   value="0"
                   id="qty_c250"
+                  min="0"
                   required
                 />
                 <input
@@ -335,6 +352,7 @@
                   name="C315 Quantity"
                   value="0"
                   id="qty_c315"
+                  min="0"
                   required
                 />
                 <input
@@ -356,6 +374,7 @@
                   name="C400 Quantity"
                   value="0"
                   id="qty_c400"
+                  min="0"
                   required
                 />
                 <input
@@ -377,6 +396,7 @@
                   name="Pallet Quantity"
                   value="0"
                   id="pallet-quantity"
+                  min="0"
                   required
                 />
                 <input
@@ -398,6 +418,7 @@
                   name="Frames Quantity"
                   value="0"
                   id="frames"
+                  min="0"
                   required
                 />
                 <input
@@ -419,7 +440,7 @@
                   name="Boards Quantity"
                   value="0"
                   id="boards"
-                  required
+                  min="0"
                 />
                 <input
                   class="qy"
@@ -430,8 +451,12 @@
                 />
               </div>
 
-              <div class="input-row"  id="totalcred1">
-                <label for="frames" class="paragraph-text form-item" id ="totalcred3">
+              <div class="input-row" id="totalcred1">
+                <label
+                  for="frames"
+                  class="paragraph-text form-item"
+                  id="totalcred3"
+                >
                   Total Credit Due
                 </label>
                 <div class="dots paragraph-text" id="totalcred2"></div>
@@ -441,38 +466,43 @@
                   readonly
                   id="total-credit-due"
                   value="0"
-                  
                 />
               </div>
             </div>
-            </div>
-            <div class="submit-container">
-             <div>
-            <input type="submit" value="Submit Form" class = "submit-button" />
+            <!-- <canvas id="drawingCanvas"></canvas>
+            <input type="hidden" id="drawingImage" name="drawingImage" /> -->
+          </div>
+          <div class="submit-container">
+            <button type="submit" class="submit-button">Submit Form</button>
             <input
               type="hidden"
               name="_next"
               value="https://reytonwire.co.uk"
             />
-             </div>
-            </div>
-          </form>
-        </div>
+          </div>
+        </form>
       </section>
       <section id="footer">
         <div class="footer-container">
-          <div class = "footer-item-1">
-            <img src="Photos/Logo.png" class ="img-footer" />
-            <p class="footer-text ">The Most Reliable UK Link To High-Quality
-               Electrical <br>Winding Products Supply Chains</p>
+          <div class="footer-item-1">
+            <img src="Photos/Logo.png" class="img-footer" />
+            <p class="footer-text">
+              The Most Reliable UK Link To High-Quality Electrical <br />Winding
+              Products Supply Chains
+            </p>
           </div>
           <div class="footer-item-2">
-            <div class ="spacer"></div>
+            <div class="spacer"></div>
           </div>
           <div class="footer-item-3">
             <p class="footer-title-text">Certificates</p>
-            <p class="footer-text ">Dahrentrad-AB-ISO9001-2021<br>Eilor AS9100D Certificate<br>Eilor ISO9001</p>
-            <p class="footer-text ">© 2023 Reytonwire | Frontend Solutions | All Rights Reserved</p>
+            <p class="footer-text">
+              Dahrentrad-AB-ISO9001-2021<br />Eilor AS9100D Certificate<br />Eilor
+              ISO9001
+            </p>
+            <p class="footer-text">
+              © 2023 Reytonwire | Frontend Solutions | All Rights Reserved
+            </p>
           </div>
         </div>
       </section>
