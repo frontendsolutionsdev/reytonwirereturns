@@ -77,6 +77,11 @@ function calculateCreditDue() {
   // Total credit due
   const totalCreditDue = totalReelSizeCreditDue + totalBoardsCreditDue + totalPalletCreditDue + totalFrameCreditDue;
 
+
+
+
+
+  
   // Set credit due values in input fields
   section3.querySelector('#price_d160').value = d160Qty * reelPrices[0];
   section3.querySelector('#price_d200').value = d200Qty * reelPrices[1];

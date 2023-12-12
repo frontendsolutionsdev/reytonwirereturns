@@ -358,15 +358,20 @@ form {
   padding: 0 0 50px 0;
 }
 
+input[type = readonly]{
+  border: 4px solid white;
+}
+
+
 input[type = number],
 input[type = text]{
-  margin-left: 5px;
+  margin-left: 5px !important;
   width: 130px;
   border: 1px solid #FFF;
   background: none;
   color: #ffffff;
+  font-family: Arial, sans-serif;
 }
-
 
 .sum-box{
   width: 160px;
@@ -377,4 +382,80 @@ input[type = text]{
   color: #ffffff;
 }
 
+#total-credit-due,
+#totalcred1,
+#totalcred2,
+#totalcred3{
+  margin-top: 20px;
+}
+
+.submit-button{
+  width: 212.8px;
+  max-width: 100%;
+  height: 81.6px;
+  flex-shrink: 0;
+  border: 2px solid #FFF;
+  background: none;
+  color: white;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 83.333% */
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.submit-container{
+  display: flex;
+  justify-content: space-around;
+  
+  padding: 50px 20vw;
+}
+
+.footer-container{
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+  padding: 50px 10vw;
+  padding-left: none;
+}
+
+.spacer{
+  width: 1px;
+height: 160px;
+flex-shrink: 0;
+background: #272727;
+margin-left: 30px;
+margin-right: 30px;
+}
+
+.footer-text {
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 200;
+  color: white;
+  text-align: left;
+  line-height: normal;
+  margin-bottom: 30px;
+  width: auto!important;
+}
+
+.img-footer{
+  width: 300px;
+}
+
+.footer-title-text{
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 52px; /* 123.81% */
+}
+
+.footer-item-1{
+  padding-left: 50px;
+}
 
