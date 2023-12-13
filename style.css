@@ -285,10 +285,16 @@ html:focus-within {
   #section-1 .info-row {
     gap: 20px;
   }
+  #section-3 .full-row input {
+    width: clamp(106px, calc(20vw + 6px), 306px) !important;
+  }
 }
 
 /* Laptop */
 @media screen and (min-width: 1008px) {
+  #section-3 .full-row input {
+    width: clamp(106px, calc(20vw + 6px), 306px) !important;
+  }
 }
 
 
@@ -323,6 +329,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: center;
 }
 
 /*  */
@@ -365,7 +372,7 @@ header {
 #images {
   display: grid;
   grid-template-columns: repeat(4, [image] 100px);
-  grid-template-rows: [row] auto [row];
+  grid-template-rows: [row]200px [row]200px;
 }
 
 #decorative-image-1 {
@@ -392,9 +399,14 @@ header {
   width: auto;
 }
 
+input {
+  border-radius: 0; /* Remove rounded corners */
+  box-shadow: none; /* Remove default box shadow */
+}
+
 #section-1 div:nth-of-type(5) input {
   width: 100%;
-  margin: 0;
+  margin: 0 3px;
 }
 
 #form-container {
@@ -402,6 +414,12 @@ header {
   width: 100%;
   height: auto;
   padding: 20px 5vw;
+}
+
+input[type="date"] {
+  ::-webkit-date-and-time-value {
+    min-height: 21px !important;
+  }
 }
 
 #line-3,
