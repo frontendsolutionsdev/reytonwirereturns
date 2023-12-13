@@ -282,6 +282,9 @@ html:focus-within {
   #mobile-info {
     display: block !important;
   }
+  #section-1 .info-row {
+    gap: 20px;
+  }
 }
 
 /* Laptop */
@@ -387,6 +390,11 @@ header {
 #form img {
   height: clamp(20px, 5vw, 100px);
   width: auto;
+}
+
+#section-1 div:nth-of-type(5) input {
+  width: 100%;
+  margin: 0;
 }
 
 #form-container {
