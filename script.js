@@ -11,7 +11,7 @@ function updateDots() {
     const availableSpace = containerWidth - pWidth - iWidth - 10; // Adjusted value for more space
 
     const dotsCount = Math.max(0, Math.floor(availableSpace / 4)); // Adjust the value for desired space
-
+    
     dots.textContent = ".".repeat(dotsCount);
   });
 }
