@@ -172,7 +172,7 @@ html:focus-within {
   }
   .info-row {
     flex-direction: column;
-    align-items: start !important;
+    align-items: center !important;
   }
   .info-row img {
     width: 100% !important;
