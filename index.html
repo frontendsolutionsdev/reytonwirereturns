@@ -15,7 +15,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="icon" type="image/x-icon" href="Photos/R-favicon.png">
+    <link rel="icon" type="image/x-icon" href="Photos/R-favicon.png" />
   </head>
   <body>
     <header>
@@ -86,7 +86,9 @@
                   <p class="paragraph-text">Llay</p>
                   <div id="line-3">
                     <p class="paragraph-text">Wrexham</p>
-                    <a href="tel:01978855668" class="paragraph-text">Tel: 01978 855668</a>
+                    <a href="tel:01978855668" class="paragraph-text"
+                      >Tel: 01978 855668</a
+                    >
                   </div>
                   <div id="line-4">
                     <p class="paragraph-text">LL12 0PJ</p>
@@ -489,19 +491,21 @@
                   value="0"
                 />
               </div>
-              <div class="input-row  full-row">
+              <div class="input-row full-row">
                 <label for="Todays Date" class="paragraph-text form-item"
                   >Todays Date <strong>*</strong></label
                 >
                 <div class="dots paragraph-text"></div>
-                <input
-                  class="body-text form-input"
-                  type="date"
-                  name="Todays Date"
-                  required
-                />
+                <div id="date-input">
+                  <input
+                    class="body-text"
+                    type="date"
+                    name="Todays Date"
+                    required
+                  />
+                </div>
               </div>
-              <div class="input-row  full-row">
+              <div class="input-row full-row">
                 <label for="Driver Name" class="paragraph-text form-item"
                   >Driver name <strong>*</strong></label
                 >
@@ -516,7 +520,7 @@
             </div>
             <!-- <canvas id="drawingCanvas"></canvas>
             <input type="hidden" id="drawingImage" name="drawingImage" /> -->
-            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_captcha" value="false" />
           </div>
           <div class="submit-container">
             <button type="submit" class="submit-button">Submit Form</button>

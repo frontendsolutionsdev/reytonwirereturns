@@ -499,6 +499,10 @@ input:focus {
   height: 100px;
 }
 
+#date-input input {
+  height: 100%;
+}
+
 
 /* Reuben */
 input[type = readonly]{
