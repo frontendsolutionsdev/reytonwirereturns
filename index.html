@@ -15,6 +15,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" type="image/x-icon" href="Photos/R-favicon.png">
   </head>
   <body>
     <header>
@@ -105,7 +106,7 @@
               </div>
               <div class="input-row">
                 <label for="Customer Name" class="paragraph-text form-item"
-                  >Customer name</label
+                  >Customer name <strong>*</strong></label
                 >
                 <div class="dots paragraph-text"></div>
                 <input
@@ -119,7 +120,7 @@
                 <label
                   for="Full customer address"
                   class="paragraph-text form-item"
-                  >Full Customer Address
+                  >Full Customer Address <strong>*</strong>
                 </label>
                 <div class="dots paragraph-text"></div>
                 <input
@@ -150,18 +151,24 @@
                   class="body-text form-input"
                   type="number"
                   name="Pallet 1 Length"
+                  value="0"
+                  min="0"
                   required
                 />
                 <input
                   class="body-text form-input"
                   type="number"
                   name="Pallet 1 Width"
+                  value="0"
+                  min="0"
                   required
                 />
                 <input
                   class="body-text form-input"
                   type="number"
                   name="Pallet 1 Height"
+                  value="0"
+                  min="0"
                   required
                 />
               </div>
@@ -174,18 +181,24 @@
                   class="body-text form-input"
                   type="number"
                   name="Pallet 2 Length"
+                  value="0"
+                  min="0"
                   required
                 />
                 <input
                   class="body-text form-input"
                   type="number"
                   name="Pallet 2 Width"
+                  value="0"
+                  min="0"
                   required
                 />
                 <input
                   class="body-text form-input"
                   type="number"
                   name="Pallet 2 Height"
+                  value="0"
+                  min="0"
                   required
                 />
               </div>
@@ -198,18 +211,24 @@
                   class="body-text form-input"
                   type="number"
                   name="Pallet 3 Length"
+                  value="0"
+                  min="0"
                   required
                 />
                 <input
                   class="body-text form-input"
                   type="number"
                   name="Pallet 3 Width"
+                  value="0"
+                  min="0"
                   required
                 />
                 <input
                   class="body-text form-input"
                   type="number"
                   name="Pallet 3 Height"
+                  value="0"
+                  min="0"
                   required
                 />
               </div>
@@ -452,7 +471,7 @@
                 />
               </div>
 
-              <div class="input-row" id="totalcred1">
+              <div class="input-row full-row">
                 <label
                   for="frames"
                   class="paragraph-text form-item"
@@ -464,9 +483,34 @@
                 <input
                   class="qty"
                   type="number"
-                  step ="0.01"
+                  name="Total Credit Due"
                   id="total-credit-due"
+                  step="0.01"
                   value="0"
+                />
+              </div>
+              <div class="input-row  full-row">
+                <label for="Todays Date" class="paragraph-text form-item"
+                  >Todays Date <strong>*</strong></label
+                >
+                <div class="dots paragraph-text"></div>
+                <input
+                  class="body-text form-input"
+                  type="date"
+                  name="Todays Date"
+                  required
+                />
+              </div>
+              <div class="input-row  full-row">
+                <label for="Driver Name" class="paragraph-text form-item"
+                  >Driver name <strong>*</strong></label
+                >
+                <div class="dots paragraph-text"></div>
+                <input
+                  class="body-text form-input"
+                  type="text"
+                  name="Driver name"
+                  required
                 />
               </div>
             </div>
@@ -479,7 +523,7 @@
             <input
               type="hidden"
               name="_next"
-              value="https://reytonwire.co.uk"
+              value="https://www.reytonwire.co.uk"
             />
           </div>
         </form>
