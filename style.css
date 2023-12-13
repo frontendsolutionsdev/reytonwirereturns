@@ -499,6 +499,10 @@ input:focus {
   height: 100px;
 }
 
+#date-input {
+  height: 23px;
+}
+
 #date-input input {
   height: 100%;
 }
