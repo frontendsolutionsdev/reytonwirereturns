@@ -257,6 +257,10 @@ html:focus-within {
     grid-column: input / span 3 !important;
     grid-row: row 2 !important;
   }
+  #section-3 .full-row #date-input {
+    grid-column: input / span 3 !important;
+    grid-row: row 2 !important;
+  }
   .dimensions p {
     width: auto !important  ;
   }
@@ -537,13 +541,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   border: 3px solid #FFF;
   margin-left: 5px;
   color: #ffffff;
-}
-
-#total-credit-due,
-#totalcred1,
-#totalcred2,
-#totalcred3{
-  margin-top: 20px;
 }
 
 .submit-button{
