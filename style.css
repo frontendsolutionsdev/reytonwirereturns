@@ -253,9 +253,9 @@ html:focus-within {
   #section-3 .title-row .dimensions {
     width: 100%;
   }
-  #section-3 #totalcred1 input {
-    grid-column: input / span 3;
-    grid-row: row 2;
+  #section-3 .full-row input {
+    grid-column: input / span 3 !important;
+    grid-row: row 2 !important;
   }
   .dimensions p {
     width: auto !important  ;
@@ -489,7 +489,8 @@ input[type = readonly]{
 
 
 input[type = number],
-input[type = text]{
+input[type = text],
+input[type = date] {
   margin: 0 3px;
   padding: 2px 3px;
   width: clamp(50px, 10vw, 150px);
@@ -497,6 +498,10 @@ input[type = text]{
   background: none;
   color: #ffffff;
   font-family: Arial, sans-serif;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1); /* Change color using invert filter */
 }
 
 .sum-box{
