@@ -22,6 +22,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
 window.addEventListener("resize", updateDots);
 
+window.onload = function() {
+  const dateInput = document.getElementById('todays-date');
+  const today = new Date();
+  const formattedDateString = today.toISOString().slice(0, 10);
+  dateInput.value = formattedDateString;
+};
+
+
 // const canvas = document.getElementById('drawingCanvas');
 // const ctx = canvas.getContext('2d');
 // let isDrawing = false;
