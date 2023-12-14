@@ -270,9 +270,14 @@ html:focus-within {
   .decorative-shape {
     display: none !important;
   }
-  #mobile-info {
-    display: block !important;
+  #information #mobile-info {
+    display: block ;
   }
+  #footer .footer-item-3,
+  #footer .footer-item-1 {
+    width: 100%;
+  }
+  
 }
 
 /* Tablet */
@@ -574,7 +579,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   justify-content: space-around;
   align-items: start;
   padding: 50px 10vw;
-  padding-left: none;
+  padding-right: none;
   height: 300px;
 }
 
@@ -613,4 +618,22 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   font-style: normal;
   font-weight: 600;
   line-height: 52px; /* 123.81% */
+}
+
+.hyperlink-color {
+  color: #ffffff;
+  /* text-decoration: underline; */
+  border-bottom: 0.5px solid rgb(255, 255, 255);
+  transition: 0.5s;
+}
+
+.hyperlink-color:hover {
+  color: #00adb5;
+  border-bottom: 0.5px solid #00adb5;
+  transition: 0.5s;
+}
+
+.footer-item-1,
+.footer-item-3 {
+  width: 40%;
 }
