@@ -64,6 +64,11 @@ body {
   }
 }
 
+
+
+
+
+
 /* === General === */
 
 /* Set variables for colours and default font*/
@@ -91,17 +96,6 @@ html:focus-within {
 
 
 /* === Text === */
-
-/* Set default styles for all title elements */
-.title-text {
-  font-family: inherit;
-  font-size: clamp(2.25rem, 6vw, 4.5rem);
-  font-size: clamp(3rem, 8vw, 6rem);
-  font-weight: normal;
-  color: var(--tertiary);
-  text-align: left;
-  line-height: normal;
-}
 
 /* Set default styles for all heading elements */
 .heading-text {
@@ -324,6 +318,9 @@ header {
 }
 
 
+
+
+
 /* === Info Section === */
 #information {
   padding: 0 10vw;
@@ -394,25 +391,33 @@ header {
   grid-row: row 2;
 }
 
+#mobile-info {
+  display: none;
+  margin: 40px 0;
+}
+
+
+
+
+
+/* === Form === */
+
+/* Sets the padding for the form */
 #form {
   padding: 50px 10vw;
 }
 
+/* Sets size of the logo image at the top of the form */
 #form img {
   height: clamp(20px, 5vw, 100px);
-  width: auto;
 }
 
+/* Ensures square corners on all input boxes on all browsers */
 input {
-  border-radius: 0; /* Remove rounded corners */
-  box-shadow: none; /* Remove default box shadow */
+  border-radius: 0;
 }
 
-#section-1 div:nth-of-type(5) input {
-  width: 100%;
-  margin: 0 3px;
-}
-
+/* Sets border, padding and size for the form container */
 #form-container {
   border: 0.5px solid var(--highlight);
   width: 100%;
@@ -420,18 +425,7 @@ input {
   padding: 20px 5vw;
 }
 
-input[type="date"] {
-  ::-webkit-date-and-time-value {
-    min-height: 21px !important;
-  }
-}
-
-#line-3,
-#line-4 {
-  display: flex;
-  justify-content: space-between;
-}
-
+/* Sets the size, alignment and padding for all the rows in the form */
 .row {
   display: flex;
   justify-content: space-between;
@@ -439,14 +433,42 @@ input[type="date"] {
   padding: 10px 0;
 }
 
+/* Sets the alignment for all the title rows in the form */
 .title-row {
   justify-content: space-between;
 }
 
-#mobile-info {
-  display: none;
-  margin: 40px 0;
+
+
+
+
+/* === Form Section 1 === */
+
+/* Aligns the text in the information row in section 1 */
+#line-3,
+#line-4 {
+  display: flex;
+  justify-content: space-between;
 }
+
+#section-1 div:nth-of-type(5) input {
+  width: 100%;
+  margin: 0 3px;
+}
+
+
+
+
+
+/* === Form Section 2 === */
+
+/*  */
+
+
+
+
+
+/* === Form Section 3 === */
 
 .input-row {
   display: flex;

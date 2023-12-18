@@ -29,52 +29,6 @@ window.onload = function() {
   dateInput.value = formattedDateString;
 };
 
-
-// const canvas = document.getElementById('drawingCanvas');
-// const ctx = canvas.getContext('2d');
-// let isDrawing = false;
-
-// // Set up event listeners
-// canvas.addEventListener('mousedown', startDrawing);
-// canvas.addEventListener('mousemove', draw);
-// canvas.addEventListener('mouseup', endDrawing);
-// canvas.addEventListener('mouseleave', endDrawing);
-
-// function startDrawing(e) {
-//   isDrawing = true;
-//   draw(e); // To start drawing immediately at the mouse position
-// }
-
-// function draw(e) {
-//   if (!isDrawing) return;
-
-//   ctx.lineWidth = 2;
-//   ctx.lineCap = 'round';
-//   ctx.strokeStyle = '#fff';
-
-//   ctx.lineTo(e.clientX - canvas.getBoundingClientRect().left, e.clientY - canvas.getBoundingClientRect().top);
-//   ctx.stroke();
-//   ctx.beginPath();
-//   ctx.moveTo(e.clientX - canvas.getBoundingClientRect().left, e.clientY - canvas.getBoundingClientRect().top);
-// }
-
-// function endDrawing() {
-//   isDrawing = false;
-//   ctx.beginPath();
-// }
-
-// // Capture drawing data and attach it to the form before submission
-// document.getElementById('myForm').addEventListener('submit', function(e) {
-//   const drawingImage = canvas.toDataURL('image/png');
-//   document.getElementById('drawingImage').value = drawingImage;
-// });
-
-
-
-
-
-
-
 // Reuben
 const section3 = document.getElementById('section-3');
 
