@@ -475,7 +475,7 @@
 
               <div class="input-row full-row">
                 <label
-                  for="frames"
+                  for="total-credit-due"
                   class="paragraph-text form-item"
                   id="totalcred3"
                 >
@@ -485,10 +485,11 @@
                 <input
                   class="qty"
                   type="number"
-                  name="Total Credit Due"
+                  name="total-credit-due"
                   id="total-credit-due"
                   step="0.01"
                   value="0"
+                  readonly="True"
                 />
               </div>
               <div class="input-row full-row">
@@ -504,21 +505,7 @@
                   required
                 />
               </div>
-              <div class="input-row full-row">
-                <label for="Driver Name" class="paragraph-text form-item"
-                  >Driver name <strong>*</strong></label
-                >
-                <div class="dots paragraph-text"></div>
-                <input
-                  class="body-text form-input"
-                  type="text"
-                  name="Driver name"
-                  required
-                />
-              </div>
             </div>
-            <!-- <canvas id="drawingCanvas"></canvas>
-            <input type="hidden" id="drawingImage" name="drawingImage" /> -->
             <input type="hidden" name="_captcha" value="false" />
           </div>
           <div class="submit-container">
@@ -550,7 +537,11 @@
               ISO9001
             </p>
             <p class="footer-text">
-              © 2023 Reytonwire | <a href="https://frontendsolutions.dev/" class="hyperlink-color">Frontend Solutions</a> | All Rights Reserved
+              © 2023 Reytonwire |
+              <a href="https://frontendsolutions.dev/" class="hyperlink-colour"
+                >Frontend Solutions</a
+              >
+              | All Rights Reserved
             </p>
           </div>
         </div>

@@ -29,62 +29,16 @@ window.onload = function() {
   dateInput.value = formattedDateString;
 };
 
-
-// const canvas = document.getElementById('drawingCanvas');
-// const ctx = canvas.getContext('2d');
-// let isDrawing = false;
-
-// // Set up event listeners
-// canvas.addEventListener('mousedown', startDrawing);
-// canvas.addEventListener('mousemove', draw);
-// canvas.addEventListener('mouseup', endDrawing);
-// canvas.addEventListener('mouseleave', endDrawing);
-
-// function startDrawing(e) {
-//   isDrawing = true;
-//   draw(e); // To start drawing immediately at the mouse position
-// }
-
-// function draw(e) {
-//   if (!isDrawing) return;
-
-//   ctx.lineWidth = 2;
-//   ctx.lineCap = 'round';
-//   ctx.strokeStyle = '#fff';
-
-//   ctx.lineTo(e.clientX - canvas.getBoundingClientRect().left, e.clientY - canvas.getBoundingClientRect().top);
-//   ctx.stroke();
-//   ctx.beginPath();
-//   ctx.moveTo(e.clientX - canvas.getBoundingClientRect().left, e.clientY - canvas.getBoundingClientRect().top);
-// }
-
-// function endDrawing() {
-//   isDrawing = false;
-//   ctx.beginPath();
-// }
-
-// // Capture drawing data and attach it to the form before submission
-// document.getElementById('myForm').addEventListener('submit', function(e) {
-//   const drawingImage = canvas.toDataURL('image/png');
-//   document.getElementById('drawingImage').value = drawingImage;
-// });
-
-
-
-
-
-
-
 // Reuben
 const section3 = document.getElementById('section-3');
 
 // Initialize prices for each reel size
 const reelSizes = ['D160', 'D200', 'D250', 'D355', 'D500', 'D630', "C250", "C315", "C400"];
-const reelPrices = [1.34, 1.50, 2.12, 4.94, 12.99, 18.16, 4.66, 9.22, 15.96];
+const reelPrices = [1.26, 2.16, 3.96, 8.10, 16.20, 32.40, 7.92, 15.30, 32.40];
 
-const palletPrice = 6.30;
-const framePrice = 4.38;
-const boardsPrice = 7.08;
+const palletPrice = 7.80;
+const framePrice = 6.50;
+const boardsPrice = 6.50;
 
 // Function to calculate credit due
 function calculateCreditDue() {
