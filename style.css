@@ -245,9 +245,14 @@ html:focus-within {
   .decorative-shape {
     display: none !important;
   }
-  #mobile-info {
-    display: block !important;
+  #information #mobile-info {
+    display: block ;
   }
+  #footer .footer-item-3,
+  #footer .footer-item-1 {
+    width: 100%;
+  }
+  
 }
 
 /* Tablet */
@@ -550,7 +555,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   justify-content: space-around;
   align-items: start;
   padding: 50px 10vw;
-  padding-left: none;
+  padding-right: none;
   height: 300px;
 }
 
