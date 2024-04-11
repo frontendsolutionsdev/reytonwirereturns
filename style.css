@@ -40,10 +40,6 @@ body {
   -ms-overflow-style: none; /* IE and Edge */
 }
 
-
-
-
-
 /* === Accessibility === */
 
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
@@ -61,11 +57,6 @@ body {
     scroll-behavior: auto !important;
   }
 }
-
-
-
-
-
 
 /* === General === */
 
@@ -88,10 +79,6 @@ html {
 html:focus-within {
   scroll-behavior: smooth;
 }
-
-
-
-
 
 /* === Text === */
 
@@ -144,10 +131,6 @@ html:focus-within {
   text-align: left;
   line-height: normal;
 }
-
-
-
-
 
 /* === Design breakpoints === */
 
@@ -293,10 +276,6 @@ html:focus-within {
   }
 }
 
-
-
-
-
 /* === Header === */
 
 /* Set out layout for the header */
@@ -314,10 +293,6 @@ header {
   width: clamp(200px, 50%, 300px);
   align-items: center;
 }
-
-
-
-
 
 /* === Info Section === */
 #information {
@@ -393,10 +368,6 @@ header {
   margin: 40px 0;
 }
 
-
-
-
-
 /* === Form === */
 
 /* Sets the padding for the form */
@@ -435,10 +406,6 @@ input {
   justify-content: space-between;
 }
 
-
-
-
-
 /* === Form Section 1 === */
 
 /* Aligns the text in the information row in section 1 */
@@ -453,17 +420,9 @@ input {
   margin: 0 3px;
 }
 
-
-
-
-
 /* === Form Section 2 === */
 
 /*  */
-
-
-
-
 
 /* === Form Section 3 === */
 
@@ -516,7 +475,7 @@ input:focus {
 }
 
 #drawingCanvas {
-  border: 2px solid #FFF;
+  border: 2px solid #fff;
   background-color: #000000;
   width: 100%;
   height: 100px;
@@ -530,20 +489,18 @@ input:focus {
   height: 100%;
 }
 
-
 /* Reuben */
-input[type = readonly]{
+input[type="readonly"] {
   border: 4px solid white;
 }
 
-
-input[type = number],
-input[type = text],
-input[type = date] {
+input[type="number"],
+input[type="text"],
+input[type="date"] {
   margin: 0 3px;
   padding: 2px 3px;
   width: clamp(50px, 10vw, 150px);
-  border: 1px solid #FFF;
+  border: 1px solid #fff;
   background: none;
   color: #ffffff;
   font-family: Arial, sans-serif;
@@ -553,21 +510,21 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   filter: invert(1); /* Change color using invert filter */
 }
 
-.sum-box{
+.sum-box {
   width: 160px;
   height: 18px;
   flex-shrink: 0;
-  border: 3px solid #FFF;
+  border: 3px solid #fff;
   margin-left: 5px;
   color: #ffffff;
 }
 
-.submit-button{
+.submit-button {
   width: 212.8px;
   max-width: 100%;
   height: 81.6px;
   flex-shrink: 0;
-  border: 2px solid #FFF;
+  border: 2px solid #fff;
   background: none;
   color: white;
   text-align: center;
@@ -581,14 +538,14 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   cursor: pointer;
 }
 
-.submit-container{
+.submit-container {
   display: flex;
   justify-content: space-around;
-  
+
   padding: 50px 20vw;
 }
 
-.footer-container{
+.footer-container {
   display: flex;
   justify-content: space-around;
   align-items: start;
@@ -601,7 +558,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   height: 100%;
 }
 
-.spacer{
+.spacer {
   width: 1px;
   height: 100%;
   flex-shrink: 0;
@@ -618,18 +575,30 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   text-align: left;
   line-height: normal;
   margin-bottom: 30px;
-  width: auto!important;
+  width: auto !important;
 }
 
-.img-footer{
+.img-footer {
   width: 300px;
 }
 
-.footer-title-text{
-  color: #FFF;
+.footer-title-text {
+  color: #fff;
   font-family: Roboto;
   font-size: 30px;
   font-style: normal;
   font-weight: 600;
   line-height: 52px; /* 123.81% */
+}
+
+.hyperlink-colour {
+  color: #FFFFFF;
+  border-bottom: 0.5px solid rgb(255, 255, 255);
+  transition: 0.5s;
+}
+
+.hyperlink-colour:hover {
+  color: #00adb5;
+  border-bottom: 0.5px solid #00adb5;
+  transition: 0.5s;
 }
