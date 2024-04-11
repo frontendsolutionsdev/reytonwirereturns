@@ -34,11 +34,11 @@ const section3 = document.getElementById('section-3');
 
 // Initialize prices for each reel size
 const reelSizes = ['D160', 'D200', 'D250', 'D355', 'D500', 'D630', "C250", "C315", "C400"];
-const reelPrices = [1.34, 1.50, 2.12, 4.94, 12.99, 18.16, 4.66, 9.22, 15.96];
+const reelPrices = [1.26, 2.16, 3.96, 8.10, 16.20, 32.40, 7.92, 15.30, 32.40];
 
-const palletPrice = 6.30;
-const framePrice = 4.38;
-const boardsPrice = 7.08;
+const palletPrice = 7.80;
+const framePrice = 6.50;
+const boardsPrice = 6.50;
 
 // Function to calculate credit due
 function calculateCreditDue() {
